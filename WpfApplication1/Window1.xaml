@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Window1" Height="353" Width="137"
+        WindowStyle = "None"  AllowsTransparency = "True"  ShowInTaskbar = "False" Loaded="Window_Loaded" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Background>
+        <ImageBrush ImageSource="Image/mobilebox_h.png"/>
+    </Window.Background>
+    <Grid >
+
+        <local:ImageButton x:Name="imageButton1" 
+                       DefaultImageSource="image/Image_e1.png" 
+                       DisableImageSource="Image/Image_e4.png" 
+                       PressImageSource="Image/Image_e3.png" 
+                       OverImageSource="Image/Image_e2.png" 
+                       Width="82" Height="81" Margin="30,25,25,247" />
+
+
+        <local:ImageButton x:Name="imageButton2" 
+                       DefaultImageSource="image/Image_e1.png" 
+                       DisableImageSource="Image/Image_e4.png" 
+                       PressImageSource="Image/Image_e3.png" 
+                       OverImageSource="Image/Image_e2.png"
+                       Width="82" Height="81" Margin="33,120,22,152" />
+
+
+        <local:ImageButton x:Name="imageButton3"
+                       DefaultImageSource="image/Image_e1.png" 
+                       DisableImageSource="Image/Image_e4.png" 
+                       PressImageSource="Image/Image_e3.png" 
+                       OverImageSource="Image/Image_e2.png"
+                       Width="82" Height="81" Margin="36,214,19,58" IsEnabled="False" />
+
+
+    </Grid>
+</Window>
